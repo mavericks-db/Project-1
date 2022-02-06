@@ -1,0 +1,47 @@
+.container {
+    display: flex;
+    height: 100vh;
+
+    /* To place some gap between boxes */
+    gap: 25px;
+
+    /* Change the value here to see results */
+    flex-direction: row;
+    /* Change the value here to see results */
+    justify-content: flex-start;
+
+    /* Change the value here to see results */
+    align-content: flex-start;
+    /* wtihout this line, align-content won't work */
+    flex-wrap: wrap;
+
+    /* Change the value here to see results */
+    align-items: flex-start;
+}
+
+[class ^="box-"] {
+    width: 140px;
+    height: 140px;
+    background-color: skyblue;
+    border: 2px solid black;
+
+    /* To view the letter better */
+    font-size: 65px;
+
+    /* Placing text at center */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box-1 {
+    flex-grow: 1;
+}
+
+.box-2 {
+    flex-grow: 5;
+}
+
+.box-3 {
+    flex-grow: 1;
+}
